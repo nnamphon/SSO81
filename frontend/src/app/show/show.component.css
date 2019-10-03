@@ -1,0 +1,36 @@
+/*
+  container เป็นกล่องใบที่สองของเรา
+  ที่จะวางตัวจากบนลงล่าง
+*/
+.container {
+  display: flex;
+  /* อีลีเมนต์ต่างๆในกล่องนี้จะมีทิศทางเดียว คือจากบนลงล่าง */
+  flex-direction: column;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header, .sidebar, .main, .footer {
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  /* 
+    ในขณะที่ Sidebar และ Main ที่อยู่ในกล่องใบที่สองนี้
+    จะมีทิศทางจากซ้ายไปขวา
+  */
+  flex-direction: row;
+}
+
+
+.main { 
+  background: #F6BB42; 
+  flex: 3;
+}
+
+.sidebar { 
+  background: #E9573F; 
+  flex: 1;
+}
